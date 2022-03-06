@@ -7,12 +7,18 @@ Studying docker-compose examples
 
 ### Examples
 
-#### flask
+#### flask-redis
 
-* flask + redis example
+* Example using
+  * flask - https://flask.palletsprojects.com/en/2.0.x/
+  * redis - https://redis.io
 * Access http://localhost:5000 of your computer to see.
 ```
-cd flask/
+cd flask-redis/
 docker-compose build
 docker-compose up -d
+```
+* To end the server.
+```
+docker-compose down
 ```
