@@ -1,16 +1,16 @@
 # docker-compose
 Studying docker-compose examples
 
-## Pre-requisites
+## Requirements
 * Docker
 * docker-compose
 
-### examples
+### Examples
 
 #### flask
 
 * flask + redis example
-
+* Access http://localhost:5000 of your computer to see.
 ```
 cd flask/
 docker-compose build
