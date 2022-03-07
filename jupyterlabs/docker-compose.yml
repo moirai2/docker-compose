@@ -23,25 +23,25 @@ services:
       --no-browser
       --NotebookApp.token=''
       --notebook-dir=/workspace
-#  cellrank:
-#    restart: always
-#    container_name: cellrank-container
-#    build:
-#      context: jupyterlab-cellrank
-#      dockerfile: ./Dockerfile
-#    ports:
-#      - "8889:8888"
-#    volumes:
-#      - ./jupyterlab-cellrank/root:/root/.jupyter
-#      - ./jupyterlab-cellrank/workspace:/workspace
-#    entrypoint: >
-#      jupyter-lab
-#      --allow-root
-#      --ip=0.0.0.0
-#      --port=8888
-#      --no-browser
-#      --NotebookApp.token=''
-#      --notebook-dir=/workspace
+  cellrank:
+    restart: always
+    container_name: cellrank-container
+    build:
+      context: jupyterlab-cellrank
+      dockerfile: ./Dockerfile
+    ports:
+      - "8889:8888"
+    volumes:
+      - ./jupyterlab-cellrank/root:/root/.jupyter
+      - ./jupyterlab-cellrank/workspace:/workspace
+    entrypoint: >
+      jupyter-lab
+      --allow-root
+      --ip=0.0.0.0
+      --port=8888
+      --no-browser
+      --NotebookApp.token=''
+      --notebook-dir=/workspace
 #  rstudio:
 #    restart: always
 #    container_name: rstudio-container
